@@ -1,0 +1,89 @@
+/* รีเซ็ตหน้าจอ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ส่วนที่ 1 กล่องที่ 1 */
+nav {
+    display: flex; /* กำหนดให้กล่องเมนู เรียงต่อกัน */
+    justify-content: space-between; /* ดันกล่องให้ ชิดซ้าย-ขวา กระจายออก */
+    padding: 10px;
+    background-color: bisque;
+}
+
+/* กำหนดกล่อง logo และ a */
+.logo a{
+    text-decoration: none;
+    color: rgb(52, 17, 1);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* กำหนด กล่องเมนู  */
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+/* กำหนด กล่องเมนู ย่อย li */
+.menu li {
+    margin-left: 12px;
+}
+
+/* กำหนด กล่องเมนู ย่อย li  a */
+.menu li a {
+    text-decoration: none; /*ไม่แสดงเส้นใต้เมนูลิงก์ */
+    color: #301d02d2;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* กำหนด กล่องที่ 2  Class banner */
+.banner {
+    background-color: #6e3110f0; /* สีพื้นหลัง */
+    color: rgb(204, 153, 42);  /* สีอักษร */
+    height: 400px; /* ความสูง */
+    /* จัดตำแหน่งรูปภาพด้วย flex */
+    display: flex; /* แสดงผลลัพธ์ เป็นแนวนอน */
+    justify-content: center;  /* จัดกึ่งกลาง แนวนอน */
+    align-items: center; /* จัดกึ่งกลาง แนวตั้ง */
+    
+} 
+.banner-info{
+    text-align: center;
+}
+/* เข้าถึงการปรับขนาดรูปภาพ */
+.banner-info img{
+    width: 300px; /* กำหนดความกว้างของรูปภาพ */
+    border-radius: 100%; /* กำหนดขอบโค้งมน  */
+}
+.banner h1 {
+    margin-top: 10px;
+}
+/* กำหนด class main */
+/* จัดการแสดงหน้าจอแบบคอลัมน์ grid */
+main{
+    display: grid;  /* แสดงผลแบบคอลัมน์ */
+    grid-template-columns: 1fr 1fr 1fr; /* กำหนด 3 คอลัมน์*/
+}
+
+main div{
+    padding: 20px; /* ระยะห่าง ระหว่างคอลัมน์ */
+}
+
+main div p{
+    margin-top: 10px; /* ระยะขอบบน ข้อความจากรูปภาพ */
+    padding: 1rem; /* ระยะห่างรอบด้าน หน่วยเป็น เรม */
+}
+main img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* กำหนด footer */
+footer{
+    background-color:#6e3110f0 ;
+    color: azure;0
+    padding: 20px;
+    text-align: center;
+}
